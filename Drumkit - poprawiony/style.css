@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(73, 0, 73);
+    margin:auto;
+}
+.source{
+    width:100%;
+    margin-top: 200px;
+    margin-left: 355px;
+}
+.buttons{
+    width:100%;
+    margin-left: 510px;
+    margin-top: 50px;
+}
+.buttonall{
+    width:100%;
+    margin-top: 50px;
+    margin-left: 820px;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(123, 123, 238);
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    margin: 0 auto;
+}
+.btn:hover {background-color: #47cddf}
+.btn:active {
+    background-color: #327041;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+

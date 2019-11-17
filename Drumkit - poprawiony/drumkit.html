@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Drum Kit</title>
+</head>
+
+<body>
+    <div class="source">
+        <audio src="sounds/clap.wav" controls id="clap"></audio>
+        <audio src="sounds/boom.wav" controls id="boom"></audio>
+        <audio src="sounds/hihat.wav" controls id="hihat"></audio>
+        <audio src="sounds/kick.wav" controls id="kick"></audio>
+    </div>
+    <div class="buttons">
+        <button class="btn" id="channel1RecBtn">Channel 1 record</button>
+        <button class="btn" id="channel1PlayBtn">Channel 1 play</button>
+        <button class="btn" id="channel2RecBtn">Channel 2 record</button>
+        <button class="btn" id="channel2PlayBtn">Channel 2 play</button>
+        <button class="btn" id="channel3RecBtn">Channel 3 record</button>
+        <button class="btn" id="channel3PlayBtn">Channel 3 play</button>
+        <button class="btn" id="channel4RecBtn">Channel 4 record</button>
+        <button class="btn" id="channel4PlayBtn">Channel 4 play</button>
+    </div>
+    <div class="buttonall">
+        <button class="btn" id="allPlayBtn">Play all channels</button>
+        <button class="btn" id="allClearBtn">Clear all channels</button>
+    </div>
+    <script src="drumkit.js"></script>
+</body>
+</html>
