@@ -10,6 +10,9 @@ function appStart () {
   document
     .querySelector('#btnLighten')
     .addEventListener('click', () => lightenFilter())
+  document
+    .querySelector('#btnContr')
+    .addEventListener('click', () => contrastFilter())
 
   ctx = canvas.getContext('2d');
     resize();
@@ -47,7 +50,6 @@ function darkenFilter (amount = 30) {
     canvasData.data[i + 2] -= amount
   }
   ctx.putImageData(canvasData, 0, 0)
-  console.log(canvasData.data)
 }
 
 function lightenFilter (amount = 30) {
@@ -59,6 +61,23 @@ function lightenFilter (amount = 30) {
     canvasData.data[i - 1] -= amount
     // B
     canvasData.data[i - 2] -= amount
+  }
+  ctx.putImageData(canvasData, 0, 0)
+}
+function contrastFilter (amount = 7) {
+  const canvasData = ctx.getImageData(0, 0, 1920, 1080)
+  for (let i = 0; i < canvasData.data.length; i += 4) {
+    const r = canvasData.data[i]
+    const g = canvasData.data[i + 1]
+    const b = canvasData.data[i + 2]
+
+    const avg = (r + g + b) / 3
+    if (avg <= 127) {
+      amount = -amount
+    }
+    canvasData.data[i] += amount
+    canvasData.data[i + 1] += amount
+    canvasData.data[i + 2] += amount
   }
   ctx.putImageData(canvasData, 0, 0)
   console.log(canvasData.data)

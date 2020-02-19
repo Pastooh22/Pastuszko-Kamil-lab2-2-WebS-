@@ -1,0 +1,136 @@
+body {
+  margin: 10px;
+    background-color: aliceblue;
+}
+textarea {
+  resize: none;
+  border: 0;
+}
+.firstNote {
+  color: #fff;
+  border-radius: 0px;
+  padding: 20px;
+  order: 0;
+    height: 343px;
+    width: 340px;
+    box-shadow:10px 10px 3px 0 #000;
+    margin-top: 20px;
+    
+}
+.firstNote .noteDesc{
+  margin-top: 10px;
+}
+.firstNote .noteTitle{
+  height: 30px;
+}
+.firstNote footer{
+  padding-top: 10px;
+}
+form {
+    position: relative;
+}
+input {
+    border: 0;
+    padding: 20px 0;
+}
+input.noteDesc {
+    padding: 0;
+}
+#pin {
+    position: absolute;
+    bottom: -50px;
+    right: 10px;
+}
+
+p {
+    position: absolute;
+    bottom: -65px;
+    right: 40px;
+}
+.note {
+  color: #fff;
+  border-radius: 0px;
+  padding: 20px;
+  order: 2;
+    height: 343px;
+    width: 340px;
+    box-shadow:10px 10px 3px 0 #000;
+    margin-top: 20px;
+}
+.noteTitle{
+  text-align: center;
+    padding-top: 20px;
+}
+.noteDesc{
+  height: 220px;
+    text-align: center;
+
+}
+.noteTitle, .noteDesc{
+  width: 100%;
+  background-color: rgba(1, 1, 2, .2);
+    
+  color: #ffffff;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.noteFooter button, .noteFooter input{
+  float: right;
+}
+#wrapper {
+
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(auto-fill, 400px);
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  justify-content: center;
+}
+.holder{
+  display: inline-block;
+    position: absolute;
+    left: 5px;
+}
+.color{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+    border: 1px solid white;
+}
+.red{
+  background: #ff5757;
+}
+.yellow{
+  background: #dbdb58;
+}
+.blue{
+  background: #4b87ff;
+}
+.green{
+  background: #009f00;
+}
+
+
+button {
+    width:50px;
+height:25px;
+border:none;
+outline:none;
+box-shadow:0 3px 2px 0 #2c80a2;
+color:#fff;
+font-size:14px;
+text-shadow:0 1px rgba(0,0,0,0.4);
+background-color:#3fb8e8;
+font-weight:700;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #b529ff;
+    box-shadow:0 3px 2px 0 #45006a;
+}
+
+button:active {
+    background-color: #00aa13;
+    box-shadow:0 3px 2px 0 #004d08;
+}

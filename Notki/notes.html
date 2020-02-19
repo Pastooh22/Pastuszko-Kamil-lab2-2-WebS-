@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" >
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+      <div class="firstNote blue">
+        <form id="form" name="form">
+          <input type="text" name="title" class="noteTitle" placeholder="Title" required>
+          <input type="text" name="description" class="noteDesc" placeholder="What's up?">
+          <footer class="noteFooter">
+            <div class="holder">
+              Color:
+            <div class="color red" onclick="changeColor(this)"></div>
+            <div class="color blue" onclick="changeColor(this)"></div>
+            <div class="color green" onclick="changeColor(this)"></div>
+            <div class="color yellow" onclick="changeColor(this)"></div>
+            </div>
+            <button type="submit" id="btn">Add</button>
+            <button type="reset" id="btn">Reset</button>
+            <input type="checkbox"  name="pin" value="1" id="pin">
+            <p>Pin to top</p>         
+          </footer>
+      </form>
+    </div>
+    </div>
+    <button onclick="Clear()">Clear</button>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
